@@ -1,0 +1,65 @@
+{
+  "name": "@fanosta/quartz-front-matter-list",
+  "version": "1.0.0",
+  "description": "Renders tags plus location/group frontmatter as a list of links below the title.",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "types": "./dist/components/index.d.ts",
+      "import": "./dist/components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@quartz-community/types": "github:quartz-community/types",
+    "@quartz-community/utils": "github:quartz-community/utils"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "preact": "^10.28.2",
+    "sass": "^1.97.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  },
+  "quartz": {
+    "name": "front-matter-list",
+    "displayName": "Front Matter List",
+    "description": "Renders tags plus location/group frontmatter as a list of links below the title.",
+    "category": ["component"],
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "defaultEnabled": true,
+    "defaultOptions": {},
+    "components": {
+      "FrontMatterList": {
+        "name": "front-matter-list",
+        "displayName": "Front Matter List",
+        "description": "Renders tags plus location/group frontmatter as a list of links below the title.",
+        "version": "1.0.0",
+        "defaultPosition": "beforeBody",
+        "defaultPriority": 30
+      }
+    }
+  },
+  "engines": {
+    "node": ">=22",
+    "npm": ">=10.9.2"
+  }
+}

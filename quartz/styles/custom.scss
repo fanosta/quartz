@@ -1,3 +1,8 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// make internal links more visible
+a.internal {
+  text-decoration: underline;
+}
